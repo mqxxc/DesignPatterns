@@ -20,7 +20,7 @@ void TimingStatus::OnStartTime()
 void TimingStatus::OnStop()
 {
 	std::cout << "计时已停止" << std::endl;
-	m_pContext->SetState(m_pContext->GetTimingStatus());
+	m_pContext->SetState(m_pContext->GetClosedState());
 }
 
 void TimingStatus::OnRefresh()
